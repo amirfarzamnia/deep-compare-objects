@@ -1,0 +1,30 @@
+{
+  "name": "deep-object-compare",
+  "version": "1.0.0",
+  "description": "Deeply compare two objects.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "keywords": [
+    "compare",
+    "js",
+    "javascript",
+    "objects",
+    "arrays",
+    "deep",
+    "differences",
+    "json",
+    "arrays",
+    "datatype"
+  ],
+  "author": "Amir Farzamnia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amirfarzamnia/deep-object-compare/issues"
+  },
+  "homepage": "https://github.com/amirfarzamnia/deep-object-compare#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirfarzamnia/deep-object-compare.git"
+  }
+}
