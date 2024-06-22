@@ -1,7 +1,7 @@
 {
   "name": "deep-compare-objects",
   "version": "1.0.0",
-  "description": "Deeply compare two objects.",
+  "description": "This is a JavaScript module designed to deeply compare two JavaScript objects and identify their differences. It's lightweight, easy to use, and efficient for a wide range of use cases.",
   "main": "index.js",
   "types": "index.d.ts",
   "type": "module",
