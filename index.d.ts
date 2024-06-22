@@ -8,10 +8,10 @@
  *
  * For a detailed understanding of its functionality, refer to the module's GitHub page:
  *
- * @see [GitHub](https://github.com/amirfarzamnia/deep-object-compare)
+ * @see [GitHub](https://github.com/amirfarzamnia/deep-compare-objects)
  */
 
-declare module 'deep-object-compare' {
+declare module 'deep-compare-objects' {
     /**
      * Finds and returns the differences between two objects `a` and `b`.
      *
