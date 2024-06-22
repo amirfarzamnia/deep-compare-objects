@@ -21,5 +21,5 @@ declare module 'deep-compare-objects' {
      * @returns {Record<string, any> | undefined} An object containing the differences between `a` and `b`, or undefined if `b` is null or undefined.
      */
 
-    export default function findObjectDifferences(a?: Record<string, any>, b?: Record<string, any>): Record<string, any> | undefined;
+    export default function deepCompareObjects(a?: Record<string, any>, b?: Record<string, any>): Record<string, any> | undefined;
 }
