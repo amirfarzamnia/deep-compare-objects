@@ -3,8 +3,8 @@ export default function deepCompareObjects(a = {}, b = {}) {
     // This event happens when the object b is of the null type.
     if (!b) return b;
 
-    // Reduce through the keys of object b.
-    return Object.keys(b).reduce((differences, key) => {
+    // Reduce through the keys of objects.
+    return [...new Set([...Object.keys(b), ...Object.keys(a)])].reduce((differences, key) => {
         // Check if the value of key in b is an array.
         if (Array.isArray(b[key])) {
             // If the value in a is not an array, it's a difference.
