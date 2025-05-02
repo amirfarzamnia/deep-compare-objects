@@ -1,14 +1,19 @@
 {
   "name": "deep-compare-objects",
-  "version": "1.0.5",
-  "description": "This is a JavaScript module designed to deeply compare two JavaScript objects and identify their differences. It's lightweight, easy to use, and efficient for a wide range of use cases.",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "type": "module",
+  "version": "2.0.0",
+  "description": "Deeply compare values and identify their differences.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
   "keywords": [
     "compare",
-    "js",
-    "javascript",
     "objects",
     "arrays",
     "deep",
@@ -17,12 +22,15 @@
     "arrays",
     "datatype"
   ],
-  "author": "Amir Farzamnia",
+  "author": "Amir Farzamnia <amir2452fa@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://amirfarzamnia.github.io/deep-compare-objects",
   "bugs": {
     "url": "https://github.com/amirfarzamnia/deep-compare-objects/issues"
   },
-  "homepage": "https://github.com/amirfarzamnia/deep-compare-objects#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amirfarzamnia/deep-compare-objects.git"
