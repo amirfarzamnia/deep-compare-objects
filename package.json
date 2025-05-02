@@ -1,7 +1,7 @@
 {
   "name": "deep-compare-objects",
-  "version": "2.0.0",
-  "description": "Deeply compare values and identify their differences.",
+  "version": "2.0.1",
+  "description": "Deeply compare objects and identify their differences.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
