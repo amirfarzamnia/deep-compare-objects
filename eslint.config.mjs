@@ -27,5 +27,5 @@ export default tseslint.config(
         jest: true,
       },
     },
-  }
+  },
 );

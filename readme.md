@@ -28,10 +28,10 @@ yarn add deep-compare-objects
 Here's a quick example to get you started:
 
 ```javascript
-import deepCompareObjects from 'deep-compare-objects';
+import deepCompareObjects from "deep-compare-objects";
 
-const a = { a: [1, 2, 3], b: { c: 1, d: 1 }, e: 'e', f: 'f', g: {} };
-const b = { a: [3, 2, 1], b: { c: 1, d: 2 }, e: 'e', f: 'F', g: {} };
+const a = { a: [1, 2, 3], b: { c: 1, d: 1 }, e: "e", f: "f", g: {} };
+const b = { a: [3, 2, 1], b: { c: 1, d: 2 }, e: "e", f: "F", g: {} };
 
 console.log(deepCompareObjects(a, b)); // { a: [ 3, <1 empty item>, 1 ], b: { d: 2 }, f: 'F' }
 ```
