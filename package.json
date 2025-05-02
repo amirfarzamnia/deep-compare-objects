@@ -1,6 +1,6 @@
 {
   "name": "deep-compare-objects",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Deeply compare objects and identify their differences.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,6 @@
     "deep",
     "differences",
     "json",
-    "arrays",
     "datatype"
   ],
   "author": "Amir Farzamnia <amir2452fa@gmail.com>",
