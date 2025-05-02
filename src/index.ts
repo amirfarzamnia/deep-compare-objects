@@ -1,3 +1,5 @@
+import stringify from "json-stringify-safe";
+
 /**
  * Finds and returns the differences between two objects `a` and `b`.
  *
@@ -26,10 +28,7 @@ export default function deepCompareObjects(
           (acc: any[] | undefined, item: any, index: number) => {
             const isObject = typeof item === "object" && !Array.isArray(item);
 
-            if (
-              !isObject &&
-              JSON.stringify(a[key][index]) === JSON.stringify(item)
-            ) {
+            if (!isObject && stringify(a[key][index]) === stringify(item)) {
               return acc;
             }
 
@@ -58,11 +57,11 @@ export default function deepCompareObjects(
 
         if (
           (d && Object.keys(d).length) ||
-          JSON.stringify(a[key]) !== JSON.stringify(b[key])
+          stringify(a[key]) !== stringify(b[key])
         ) {
           differences[key] = d;
         }
-      } else if (JSON.stringify(a[key]) !== JSON.stringify(b[key])) {
+      } else if (stringify(a[key]) !== stringify(b[key])) {
         differences[key] = b[key];
       }
 
