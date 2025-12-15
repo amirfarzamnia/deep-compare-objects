@@ -1,12 +1,15 @@
-name: Run Jest Tests
+name: CI
 
 on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 jobs:
-  run-jest-tests:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,8 +20,13 @@ jobs:
         with:
           node-version: latest
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run Jest tests
+      - name: Run tests
         run: pnpm test
