@@ -3,5 +3,8 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
-    target-branch: "main"
+      interval: "weekly"
+    groups:
+          npm-dependencies:
+            patterns:
+              - "*"
